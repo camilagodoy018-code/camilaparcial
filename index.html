@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Enlaces">
+    <meta name="description" content="Enlaces">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <h1>🤍    🤍    🤍    🤍    🤍 MI ARTISTA FAVORITA ES ADELE 🤍    🤍    🤍   🤍   🤍</h1>
+    </header>
+
+<body>
+    <div class="header"> </div>
+
+    <nav>
+        <a href="index.html">PAGINA PRINCIPAL</a>&nbsp; &nbsp;
+        <a href="Discografia.html">DISCOGRAFIA</a>&nbsp; &nbsp;
+        <a href="https://es.wikipedia.org/wiki/Adele">WEB DEL ARTISTA</a>&nbsp; &nbsp;
+        <a href="https://www.youtube.com/channel/UCsRM0YB_dabtEPGPTKo-gcw">CANAL DE YOUTUBE</a>&nbsp; &nbsp;
+        <a href="Imagenes.html">IMAGENES</a>&nbsp; &nbsp;
+        <a href="https://www.noticiascaracol.com/entretenimiento/adele-anuncio-que-se-tomara-un-largo-descanso-de-la-industria-musical-rg10">NOTICIA</a>&nbsp; &nbsp;
+    </nav>
+
+<head>
+    <style>
+        .header {
+            background-image: url("img/Encabezado.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold; }
+
+        nav 
+        {   text-align: center;
+            background: #d7ddf7;
+            padding: 10px 0;      
+        }
+        nav a 
+        {   margin: 0 15px;
+            text-decoration: none;
+            color: rgba(1, 0, 4, 0.8);
+            font-weight: bold;
+        }
+        nav a:hover 
+        {
+            color: hwb(207 41% 4% / 0.845);
+        }
+    </style>    
+</head>
+
+<div>
+<center><img src="img/Cantante.jpg" width="500" height="500"/></center>
+</div>
+
+<div class="contenedor-disco">
+  <img src="img/Disco.png" id="imagen" class="imagen-derecha" alt="Disco"> 
+  <p id="texto-musica"> Mi canción favorita aqui</p> </div>
+<center><h3>DERECHOS RESERVADOS CAMILA GODOY</h3></center>
+
+<audio id="musica">
+  <source src="img/Someone.mp3" type="audio/mpeg">
+</audio>
+
+<style>
+  .derecha {
+    width: "150"
+    height:"150"
+    transition: transform 0.3s ease;
+  }
+
+  .girando {
+    animation: rotar 2s linear infinite;
+  }
+
+  @keyframes rotar {
+    from {
+      transform: rotate(1deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<script>
+  const imagen = document.getElementById("imagen");
+  const musica = document.getElementById("musica");
+
+  imagen.addEventListener("click", () => {
+    if (musica.paused) {
+      musica.play();                
+      imagen.classList.add("girando");   
+    } else {
+      musica.pause();                     
+      imagen.classList.remove("girando");
+    }
+  });
+</script>
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/share/17JCddBU5u/?mibextid=wwXIfr" target="_blank"><img src="img/F.jpg" alt="Facebook"></a>
+  <a href="https://www.instagram.com/adele/?igsh=b2o5bzgzeW4yMjVo#" target="_blank"><img src="img/I.jpg" alt="Instagram"></a>
+  <a href="https://open.spotify.com/intl-es/artist/4dpARuHxo51G3z768sgnrY?si=dTLuXo3aTxeb17YTAfWPSg" target="_blank"><img src="img/S.jpg" alt="spotify"></a>
+</div>
+    
+        </body>
+        </html>
